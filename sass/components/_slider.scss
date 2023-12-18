@@ -1,0 +1,123 @@
+.slider {
+  background-color: var(--background-color-second);
+  height: 600px;
+  max-width: 1600px;
+  padding: 118px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: (
+      linear,
+      left bottom,
+      left top,
+      from(rgba(47, 48, 58, 0.4)),
+      to(rgba(47, 48, 58, 0.4))
+    )
+    url("../images/slider.jpg");
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url("../images/slider.jpg");
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50% 50%;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 44px;
+    color: var(--third-color);
+    font-weight: 900;
+    line-height: 1.36;
+    margin: 0px;
+    margin-bottom: 100px;
+  }
+  &__title--name {
+    font-size: 80px;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+  &__speciality {
+    font-size: 19px;
+    color: var(--fifth-color);
+
+    &:hover,
+    &:active,
+    &:focus {
+      @extend %hover-links;
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .slider {
+    height: 500px;
+    font-size: 26px;
+    background-size: cover;
+    background-image: (
+        linear,
+        left bottom,
+        left top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      )
+      url("../images/slider.jpg");
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/slider.jpg");
+  }
+  .slider__title {
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: 0.06em;
+    margin-bottom: 20px;
+
+    &--name {
+      font-size: 30px;
+    }
+  }
+  .slider__group {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .slider {
+    height: 400px;
+    font-size: 36px;
+    background-image: (
+        linear,
+        left bottom,
+        left top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      )
+      url("../images/slider.jpg");
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url("../images/slider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slider__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .slider__speciality {
+    padding: 20px;
+    padding: 20px;
+  }
+}

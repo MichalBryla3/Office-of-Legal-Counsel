@@ -1,0 +1,35 @@
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  display: flex;
+  align-items: center;
+
+  &__header--first {
+    color: var(--primary-color);
+  }
+  &__header--second {
+    color: var(--text-color);
+  }
+  &__footer--first {
+    color: var(--primary-color);
+  }
+  &__footer--second {
+    color: var(--third-color);
+  }
+}
+.name {
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: var(--third-color);
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .name {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
