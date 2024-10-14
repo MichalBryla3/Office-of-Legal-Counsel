@@ -237,7 +237,7 @@ img {
 }
 .footer {
   background-color: var(--background-color-second);
-  height: 252px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +319,7 @@ img {
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .footer {
-    height: 553px;
+    height: 753px;
   }
   .footer__speciality--group {
     text-align: center;
@@ -387,18 +387,20 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    height: 263px;
+    height: 323px;
   }
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .footer__container--middle {
     display: -webkit-box;
@@ -408,19 +410,19 @@ img {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  iframe {
+    width: 270px;
+    height: 200px;
+  }
   .footer__container--right {
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 60px;
   }
   .footer__container--left {
     -webkit-box-align: center;
@@ -596,13 +598,15 @@ img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .slider__speciality {
     padding: 20px;
     padding: 20px;
+  }
+  .slider__title {
+    margin: 50px;
   }
 }
 .article {
